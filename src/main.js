@@ -30,12 +30,12 @@ if (hashMap !== null) {
 
 $(`.addButton`)
     .on(`click`, () => {
-        let url = window.prompt(`请输入想要添加的网址：`);
+        let url = window.prompt(`二哈问你要准备收藏的网址：`);
         if (url.indexOf(`http`) !== 0) {
             url = `https://` + url;
             console.log(url)
         }
-        let name = window.prompt(`请输入收藏的网站名称：`);
+        let name = window.prompt(`二哈需要确认你想为收藏网站命名的名称：`);
         hashMap.push({
             logo: name,
             logoType: "text",
