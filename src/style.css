@@ -51,6 +51,7 @@ header>form>button{
     border-radius:0 20px 20px 0;
     background-color: rgb(35, 135, 155);
     color: white;
+    cursor: pointer;
 }
 
 main{
@@ -79,10 +80,17 @@ main>ul>li>.close{
     position: absolute;
     top: 0;
     right: 5%;
+    display: none;
+}
+main>ul>li:hover{/*:hover=>当鼠标浮上元素时，渲染css样式*/
+    background-color: #ccc;
+}
+main>ul>li:hover>.close{
+    display: block;
 }
 main>ul>li>a{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,8 +101,8 @@ main>ul>li>a>.url{
         color: rgb(99, 99, 99);
 }
 .logo{
-    width: 60%;
-    height: 60%;
+    width: 45%;
+    height: 45%;
     font-size: 35px;
     display: flex;
     justify-content: center;
@@ -109,8 +117,17 @@ main>ul>li>a>.url{
     border-radius: 10px;
 }
 .addButton{
-    font-size: 45px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
     color: rgb(99,99,99);
+    cursor: pointer;/*设置鼠标指向元素后鼠标样式变成手指。*/
+    /*cursor: default;设置指向元素后的鼠标样式变成默认样式*/
 }
 
 @media(max-width:500px){/*媒体判断*/

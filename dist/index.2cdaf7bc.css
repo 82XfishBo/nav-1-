@@ -52,6 +52,7 @@ header > form > input {
 header > form > button {
   white-space: nowrap;
   color: #fff;
+  cursor: pointer;
   background-color: #23879b;
   border: none;
   border-radius: 0 20px 20px 0;
@@ -84,14 +85,23 @@ main > ul > li {
 }
 
 main > ul > li > .close {
+  display: none;
   position: absolute;
   top: 0;
   right: 5%;
 }
 
+main > ul > li:hover {
+  background-color: #ccc;
+}
+
+main > ul > li:hover > .close {
+  display: block;
+}
+
 main > ul > li > a {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
@@ -103,8 +113,8 @@ main > ul > li > a > .url {
 }
 
 .logo {
-  width: 60%;
-  height: 60%;
+  width: 45%;
+  height: 45%;
   text-transform: uppercase;
   background-color: #fff;
   border-radius: 10px;
@@ -121,8 +131,16 @@ main > ul > li > a > .url {
 }
 
 .addButton {
+  width: 100%;
+  height: 100%;
   color: #636363;
-  font-size: 45px;
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  display: flex;
 }
 
 @media (max-width: 500px) {

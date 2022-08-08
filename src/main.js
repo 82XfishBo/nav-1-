@@ -49,3 +49,14 @@ window.onbeforeunload = () => {
     const string = JSON.stringify(hashMap);
     localStorage.setItem(`x`, string);//在本地设置一个key为x，其值为string。
 }
+
+// $(document).on(`keypress`, (e) => {
+//     console.log(e.key)
+//     const { key } = e;//是const key = e.key的简写。
+//     for (let i = 0; i < hashMap.length; i++){
+//         if (hashMap.logo[0] === key) {
+//             window.open(hashMap[i].url);
+//         };
+//         console.log(key);
+//     };
+// })
